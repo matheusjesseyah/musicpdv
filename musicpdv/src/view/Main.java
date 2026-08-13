@@ -94,6 +94,12 @@ public class Main extends JFrame {
 		panel.add(lblNewLabel_2);
 		
 		JButton btnFornecedores = new JButton("Fornecedores");
+		btnFornecedores.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frmFornecedor fornecedor = new frmFornecedor();
+				fornecedor.setVisible(true);
+			}
+		});
 		btnFornecedores.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		btnFornecedores.setHorizontalAlignment(SwingConstants.LEFT);
 		btnFornecedores.setAlignmentX(Component.RIGHT_ALIGNMENT);
